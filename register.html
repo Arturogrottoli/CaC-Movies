@@ -48,31 +48,32 @@
 
     <section class="form-wrapper">
     <h2>Registro</h2>
-    <form id="formRegister" method="POST" novalidate action="#">
+    <form id="formRegister" method="POST" >
         <div class="form-control">
             <label for="firstName">Nombre:</label>
             <input type="text" name="firstName" id="firstName" maxlength="25">
         </div>
+        <div class="error" id="error-firstname"></div>
         <div class="form-control">
             <label for="lastName">Apellido:</label>
             <input type="text" name="lastName" id="lastName" maxlength="25">
         </div>
         <div class="form-control">
             <label for="email-txt">E-mail:</label>
-            <input type="email" name="email" id="email" >
+            <input type="email" name="email" id="email">
         </div>
         <div class="form-control">
             <label for="password">Contraseña:</label>
             <input type="password" name="password" id="password" >
         </div>
         <div class="form-control">
-            <label id="label-birthday" for="birthdate">Fecha de Nacimiento:</label>
+            <label id="label-birthdate" for="birthdate">Fecha de Nacimiento:</label>
             <input type="date" name="birthdate" id="birthdate" >
         </div>
         <div class="form-control">
-            <label for="country">Pais:</label>
+            <label for="country"></label>
             <select name="country" id="country" class="form-select">
-                <option value="">Seleccione</option>
+                <option value="">País</option>
                 <option value="AR">Argentina</option>
                 <option value="BR">Brasil</option>
                 <option value="CH">Chile</option>
@@ -95,10 +96,28 @@
 
         </div>
     </form>
-</section>
 
 
 
     
+</section>
+
+<footer>
+    <a href="">Terminos y condiciones</a>
+    <a href="">Preguntas Frecuentes</a>
+    <a href="">Ayuda</a>
+    <a href=""><i class="fas fa-question-circle"></i></a>
+    <div class="social-icons">
+       <a href="http://www.facebook.com"  target="_blank"> <i class="fab fa-facebook-f"></i></a>
+       <a href="http://www.twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a>
+       <a href="http://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+       <a href="http://www.linkedin.com" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+
+    </div>
+    <p>2024 Codo a Codo. Todos los derechos reservados.</p>
+</footer>
+<button id="scrollToTopButton">&#9650;</button>
+<script src="/static/js/index.js"></script>
+
 </body>
 </html>
